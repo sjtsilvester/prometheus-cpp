@@ -1,0 +1,4 @@
+#pragma once
+
+#define PROMETHEUS_CPP_PUSH_EXPORT
+#define PROMETHEUS_CPP_PUSH_NO_EXPORT

@@ -1,0 +1,14 @@
+-shared
+-o
+bazel-out/k8-fastbuild/bin/push/libpush.so
+-Wl,-S
+-fuse-ld=gold
+-Wl,-no-as-needed
+-Wl,-z,relro,-z,now
+-B/usr/bin
+-pass-exit-codes
+bazel-out/k8-fastbuild/bin/push/_objs/push/curl_wrapper.pic.o
+bazel-out/k8-fastbuild/bin/push/_objs/push/gateway.pic.o
+-lpthread
+-lstdc++
+-lm
